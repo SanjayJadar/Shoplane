@@ -1,0 +1,254 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    /* background-color: bisque; */
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+header h1{
+    margin-left: 7%;
+    margin-top: 1%;
+    color: #009688;
+}
+header h1 span{ 
+    font-weight: 300;
+    color: black;
+}
+.explore{
+    display: flex;
+    margin-left: 18%;
+}
+.explore a{
+    text-decoration: none;
+    color: black;
+    margin: 15%;
+    font-weight: 600;
+}
+.icons{
+    margin-left: 20%;
+    display: flex;
+}
+.icons i{
+    font-size: 25px;
+    margin: 40%;
+} 
+.icons i span{
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 10px;
+    /* margin-top: 10px; */
+    color: white;
+    background-color: #009688;
+} 
+
+/* Image Slider  */ 
+.imageSliderContainer{
+    margin-top: 1%;
+}
+
+/* Support  */
+.support{
+    display: flex;
+}
+.support div{
+    margin-left: 13.2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.support i{
+    color: white;
+    background-color: #009688;
+    padding: 40px;
+    border-radius: 80px;
+    font-size: 30px;
+}
+
+/* Clothing  */
+.clothsHeading{
+    font-weight: 400;
+    margin-left: 6%;
+    margin-bottom: 3%;
+}
+#clothing{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+}
+#clothing div{
+    text-decoration: none;
+    width: 210px;
+    height: 437px;
+    cursor: pointer;
+    margin-left: 2vw;
+    margin-bottom: 10%;
+    /* background-color: blanchedalmond; */
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+#clothing div:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#clothing div img{
+    justify-content: center;
+    width: 210px;
+    height: 280px;
+}
+#clothing div h5{
+    color: rgb(66, 65, 65);
+    font-weight: 400;
+    font-size: 17px;
+    padding: 10px;
+}
+#clothing div p{
+    color: rgb(133, 130, 130);
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+#clothing div h6{
+    color: #009688;
+    padding-left: 10px;
+}
+
+/* Accessories  */
+.accessoriesHeading{
+    margin-top: 5%;
+    font-weight: 400;
+    margin-left: 6%;
+    margin-bottom: 3%;
+}
+#accessories{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+}
+#accessories div{
+    text-decoration: none;
+    width: 210px;
+    height: 437px;
+    cursor: pointer;
+    margin-left: 2vw;
+    margin-bottom: 10%;
+    /* background-color: blanchedalmond; */
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+#accessories div:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#accessories div img{
+    width: 210px;
+    height: 280px;
+}
+#accessories div h5{
+    color: rgb(66, 65, 65);
+    font-weight: 400;
+    font-size: 17px;
+    padding: 10px;
+}
+#accessories div p{
+    color: rgb(133, 130, 130);
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+#accessories div h6{
+    color: #009688;
+    padding-left: 10px;
+}
+ 
+/* Footer  */
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* justify-content: center; */
+}
+footer div{
+    margin: 20%;
+}
+footer h6{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+footer p{
+    /* letter-spacing: 0.5px; */
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(194, 191, 191);
+    margin-bottom: 0;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .imageSliderContainer{
+        display: none;
+    }
+    header{
+        box-shadow: none;
+    }
+    .icons{
+        padding-right: 30px; 
+    }
+    .support div{
+        margin-left: 8%; 
+    }
+    header .explore{
+        /* margin-left: 5%;  */
+        margin-left: 5px;
+    }
+    #clothing{
+        /* display: grid; */
+        grid-template-columns: auto auto auto; 
+        /* justify-content: center; */
+        margin-left: 100px;
+    }
+    #accessories{
+        /* display: grid; */
+        grid-template-columns: auto auto auto; 
+        /* justify-content: center; */
+        padding-left: 100px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .explore{
+        display: block;
+    }
+    .icons{
+        margin-left: 10%; 
+    }
+    .support div{
+        margin-left: 5%; 
+    }
+    header h1{
+        margin-left: 2%; 
+    }
+    #clothing{ 
+        /* margin-left: 50px; */
+        grid-template-columns: auto auto;
+        /* justify-content: center; */
+        /* align-items: center; */
+        padding-left: 180px;
+    }
+    #accessories{ 
+        /* margin-left: 50px; */
+        grid-template-columns: auto auto; 
+        padding-left: 180px;
+
+    }
+    footer{ 
+        grid-template-columns: auto auto;
+        width: 125%;
+        /* justify-content: center; */
+    }
+}
